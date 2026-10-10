@@ -1,118 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>桃太郎の自己紹介</title>
-
+  <title>桃太郎の学習サイト | トップ</title>
   <style>
-    /* ページ全体 */
-    body {
-      margin: 0;
-      font-family: "Arial", sans-serif;
-      background-color: #eaf4ff;
-      color: #333;
-      line-height: 1.7;
-    }
-
-    /* ヘッダー */
-    header {
-      background-color: #68a8e8;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    /* メインコンテンツ */
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    /* カード */
-    section {
-      background-color: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px #00000015;
-    }
-
-    h2 {
-      color: #3478bd;
-      border-bottom: 2px solid #b8d9fa;
-      padding-bottom: 8px;
-    }
-
-    .character {
-      text-align: center;
-      font-size: 80px;
-    }
-
-    /* フッター */
-    footer {
-      text-align: center;
-      background-color: #68a8e8;
-      color: white;
-      padding: 20px;
-    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", "Yu Gothic", sans-serif; background: #edf4ff; color: #23324a; }
+    header { padding: 18px 24px; background: #fff; border-bottom: 1px solid #dce6f7; font-weight: 700; }
+    main { min-height: calc(100vh - 135px); display: grid; place-items: center; padding: 40px 20px; }
+    .card { width: min(100%, 620px); padding: 48px 32px; background: #fff; border-radius: 22px; box-shadow: 0 12px 40px rgba(29,72,130,.10); text-align: center; }
+    .label { color: #386bd8; font-weight: 700; letter-spacing: .08em; }
+    h1 { margin: 16px 0; font-size: clamp(28px, 5vw, 42px); }
+    p { line-height: 1.9; }
+    .button { display: inline-block; margin-top: 18px; padding: 15px 30px; color: white; background: #2864d9; text-decoration: none; font-weight: 700; border-radius: 12px; }
+    .button:hover { background: #164cac; }
+    footer { text-align: center; color: #65758e; padding: 22px; font-size: 13px; }
   </style>
 </head>
-
 <body>
-
-  <header>
-    <h1>桃太郎のホームページ</h1>
-    <p>鬼退治ならおまかせください！</p>
-  </header>
-
+  <header>桃太郎のWeb学習サイト</header>
   <main>
-
-    <section>
-      <div class="character">🍑</div>
-      <h2>はじめまして！</h2>
-      <p>
-        こんにちは！桃太郎です。<br>
-        岡山県出身で、大きな桃から生まれました。
-        元気いっぱい、冒険が大好きです！
-      </p>
+    <section class="card">
+      <div class="label">PAGE 01 / TOP</div>
+      <h1>桃太郎のホームページ</h1>
+      <p>これはCloudflare Pagesの学習用サイトです。<br>ボタンをクリックして、2ページ目へ移動してみましょう。</p>
+      <a class="button" href="page2.html">2ページ目を見る →</a>
     </section>
-
-    <section>
-      <h2>プロフィール</h2>
-      <p><strong>名前：</strong>桃太郎</p>
-      <p><strong>出身：</strong>岡山県</p>
-      <p><strong>好きな食べ物：</strong>きびだんご</p>
-      <p><strong>特技：</strong>鬼退治</p>
-    </section>
-
-    <section>
-      <h2>ぼくの仲間たち</h2>
-      <p>🐕 犬：頼れるパートナー</p>
-      <p>🐒 猿：頭の回転が速い仲間</p>
-      <p>🐦 キジ：空から助けてくれる仲間</p>
-    </section>
-
-    <section>
-      <h2>将来の夢</h2>
-      <p>
-        みんなが安心して暮らせる、
-        平和な世界をつくることです！
-      </p>
-    </section>
-
   </main>
-
-  <footer>
-    <p>© 2026 桃太郎のホームページ</p>
-  </footer>
-
+  <footer>HTMLのページ間リンクを体験しよう</footer>
 </body>
 </html>
